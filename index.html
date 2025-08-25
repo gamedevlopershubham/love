@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love ❤️</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Playfair Display', serif;
+            background: linear-gradient(135deg, #ffebee 0%, #fce4ec 50%, #f8bbd0 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .romantic-font {
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .heart-beat {
+            animation: heartbeat 1.5s ease-in-out infinite;
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            15% { transform: scale(1.1); }
+            30% { transform: scale(1); }
+            45% { transform: scale(1.1); }
+            60% { transform: scale(1); }
+            100% { transform: scale(1); }
+        }
+
+        .fade-in {
+            animation: fadeIn 2s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .photo-frame {
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .photo-frame:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+
+        .message-bubble {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            border-radius: 20px;
+            padding: 20px;
+            margin: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .message-bubble:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .sparkle {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: #fff;
+            border-radius: 50%;
+            animation: sparkle 2s ease-in-out infinite;
+        }
+
+        @keyframes sparkle {
+            0%, 100% { opacity: 0; transform: scale(0); }
+            50% { opacity: 1; transform: scale(1); }
+        }
+
+        .love-btn {
+            background: linear-gradient(135deg, #e91e63 0%, #ad1457 100%);
+            transition: all 0.3s ease;
+        }
+
+        .love-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(233, 30, 99, 0.3);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-4">
+    <!-- Header Section -->
+    <header class="text-center mb-12 fade-in">
+        <div class="heart-beat inline-block mb-4">
+            <svg class="w-16 h-16 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path>
+            </svg>
+        </div>
+        <h1 class="text-4xl md:text-6xl font-bold text-pink-700 romantic-font mb-4">
+            For My Beautiful Love
+        </h1>
+        <p class="text-xl text-pink-600 italic">
+            You make every moment magical
+        </p>
+    </header>
+
+    <!-- Photo Gallery Section -->
+    <section class="w-full max-w-6xl mb-16 fade-in">
+        <h2 class="text-3xl text-center text-pink-700 romantic-font mb-8">Your Cute Picture </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Photo 1 -->
+            <div class="photo-frame bg-white rounded-2xl p-4 float">
+                <img src="img/1.PNG" alt="Romantic sunset beach walk holding hands with golden hour lighting" class="w-full h-64 object-cover rounded-xl mb-4">
+                <p class="text-center text-pink-600 romantic-font text-xl">With you, love feels like a beautiful eternity</p>
+            </div>
+
+            <!-- Photo 2 -->
+            <div class="photo-frame bg-white rounded-2xl p-4 float" style="animation-delay: 1s;">
+                <img src="img/2.PNG" alt="Cozy coffee date moment with warm lighting and smiling faces" class="w-full h-64 object-cover rounded-xl mb-4">
+                <p class="text-center text-pink-600 romantic-font text-xl">In your laughter, I find my happiness.</p>
+            </div>
+
+            <!-- Photo 3 -->
+            <div class="photo-frame bg-white rounded-2xl p-4 float" style="animation-delay: 2s;">
+                <img src="img/3.PNG" alt="Adventure hiking trip with mountain backdrop and happy embrace" class="w-full h-64 object-cover rounded-xl mb-4">
+                <p class="text-center text-pink-600 romantic-font text-xl">Your love is the light that guides me home.</p>
+            </div>
+
+            <!-- Photo 4 -->
+            <div class="photo-frame bg-white rounded-2xl p-4 float" style="animation-delay: 0.5s;">
+                <img src="img/4.PNG" alt="Stargazing night with blanket and telescope under Milky Way" class="w-full h-64 object-cover rounded-xl mb-4">
+                <p class="text-center text-pink-600 romantic-font text-xl">You are my love story, written in the stars.</p>
+            </div>
+
+            <!-- Photo 5 -->
+            <div class="photo-frame bg-white rounded-2xl p-4 float" style="animation-delay: 1.5s;">
+                <img src="img/5.PNG" alt="Laughing together during rainy day with colorful umbrellas" class="w-full h-64 object-cover rounded-xl mb-4">
+                <p class="text-center text-pink-600 romantic-font text-xl">In a world full of chaos, you are my peace.</p>
+            </div>
+
+            <!-- Photo 6 -->
+            <div class="photo-frame bg-white rounded-2xl p-4 float" style="animation-delay: 2.5s;">
+                <img src="img/6.PNG" alt="Celebrating special occasion with champagne toast and elegant dinner" class="w-full h-64 object-cover rounded-xl mb-4">
+                <p class="text-center text-pink-600 romantic-font text-xl">You are the missing piece to my heart's puzzle.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Love Messages Section -->
+    <section class="w-full max-w-4xl mb-16 fade-in">
+        <h2 class="text-3xl text-center text-pink-700 romantic-font mb-8">Messages From My Heart</h2>
+        <div class="space-y-6">
+            <div class="message-bubble">
+                <p class="text-lg text-pink-700 romantic-font text-center">
+                    "Every moment with you feels like a beautiful dream I never want to wake up from."
+                </p>
+            </div>
+            <div class="message-bubble">
+                <p class="text-lg text-pink-700 romantic-font text-center">
+                    "Your smile is my favorite sight in the world, and your laughter is my favorite sound."
+                </p>
+            </div>
+            <div class="message-bubble">
+                <p class="text-lg text-pink-700 romantic-font text-center">
+                    "I fall in love with you more every day, in a thousand different ways."
+                </p>
+            </div>
+            <div class="message-bubble">
+                <p class="text-lg text-pink-700 romantic-font text-center">
+                    "You are the missing piece I never knew I was looking for."
+                </p>
+            </div>
+            <div class="message-bubble">
+                <p class="text-lg text-pink-700 romantic-font text-center">
+                    "My heart beats for you, today, tomorrow, and always."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Love Note -->
+    <section class="w-full max-w-2xl mb-16 fade-in">
+        <div class="bg-white rounded-2xl p-8 shadow-xl text-center">
+            <h3 class="text-2xl text-pink-700 romantic-font mb-6">Click for a Special Message Magic Button</h3>
+            <button onclick="showSpecialMessage()" class="love-btn text-white px-8 py-4 rounded-full text-lg romantic-font transition-all duration-300">
+                💝 Reveal My Love
+            </button>
+            <p id="specialMessage" class="mt-6 text-pink-600 romantic-font text-xl hidden"></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center mt-12 fade-in">
+        <p class="text-pink-600 romantic-font text-lg">
+            Made with 💖 just for you, my love
+        </p>
+        <p class="text-pink-500 text-sm mt-2">
+            Forever yours By codershubham_987
+        </p>
+    </footer>
+
+    <!-- Sparkle Effects -->
+    <div id="sparkles"></div>
+
+    <script>
+        // Create sparkle effects
+        function createSparkles() {
+            const sparklesContainer = document.getElementById('sparkles');
+            for (let i = 0; i < 20; i++) {
+                const sparkle = document.createElement('div');
+                sparkle.className = 'sparkle';
+                sparkle.style.left = Math.random() * 100 + 'vw';
+                sparkle.style.top = Math.random() * 100 + 'vh';
+                sparkle.style.animationDelay = Math.random() * 2 + 's';
+                sparkle.style.opacity = '0';
+                sparklesContainer.appendChild(sparkle);
+            }
+        }
+
+        // Special message reveal
+        function showSpecialMessage() {
+            const messages = [
+                "You are the most beautiful thing that has ever happened to me.",
+                "I cherish every second I get to spend with you.",
+                "Your love makes me a better person every day.",
+                "I'm so grateful to have you in my life.",
+                "You are my today and all of my tomorrows.",
+                "My heart belongs to you, now and forever.",
+                "You make ordinary moments extraordinary.",
+                "I love you more than words could ever express."
+            ];
+            
+            const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+            const messageElement = document.getElementById('specialMessage');
+            
+            messageElement.textContent = randomMessage;
+            messageElement.classList.remove('hidden');
+            messageElement.classList.add('fade-in');
+            
+            // Add heart animation
+            createHearts();
+        }
+
+        // Create floating hearts animation
+        function createHearts() {
+            for (let i = 0; i < 10; i++) {
+                const heart = document.createElement('div');
+                heart.innerHTML = '💖';
+                heart.style.position = 'fixed';
+                heart.style.fontSize = Math.random() * 20 + 10 + 'px';
+                heart.style.left = Math.random() * 100 + 'vw';
+                heart.style.top = '100vh';
+                heart.style.opacity = '0';
+                heart.style.zIndex = '1000';
+                heart.style.pointerEvents = 'none';
+                document.body.appendChild(heart);
+                
+                // Animate heart
+                heart.animate([
+                    { opacity: 0, transform: 'translateY(0) scale(0)' },
+                    { opacity: 1, transform: 'translateY(-100vh) scale(1)' },
+                    { opacity: 0, transform: 'translateY(-200vh) scale(0)' }
+                ], {
+                    duration: 3000 + Math.random() * 2000,
+                    easing: 'cubic-bezier(0.4, 0, 0.2, 1)'
+                }).onfinish = () => heart.remove();
+            }
+        }
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            createSparkles();
+            
+            // Add staggered animations to message bubbles
+            const bubbles = document.querySelectorAll('.message-bubble');
+            bubbles.forEach((bubble, index) => {
+                bubble.style.animationDelay = (index * 0.3) + 's';
+            });
+        });
+    </script>
+</body>
+</html>
+
